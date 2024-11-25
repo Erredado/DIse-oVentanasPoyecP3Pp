@@ -16,7 +16,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VistaConsulPrgRp());
+            Application.Run(new VistaEliminarUsuarios());
         }
     }
 }

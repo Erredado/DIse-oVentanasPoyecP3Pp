@@ -56,6 +56,12 @@
     <Compile Include="OpcionesDeAtacarPersonaje.Designer.cs">
       <DependentUpon>OpcionesDeAtacarPersonaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="VistaEliminarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaEliminarUsuarios.Designer.cs">
+      <DependentUpon>VistaEliminarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="VistaRecuperarContra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="OpcionesDeAtacarPersonaje.resx">
       <DependentUpon>OpcionesDeAtacarPersonaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaEliminarUsuarios.resx">
+      <DependentUpon>VistaEliminarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRecuperarContra.resx">
       <DependentUpon>VistaRecuperarContra.cs</DependentUpon>
