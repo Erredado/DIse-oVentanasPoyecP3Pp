@@ -1,5 +1,5 @@
-﻿using MaterialSkin;
-using MaterialSkin.Controls;
+﻿using MaterialSkin.Controls;
+using MaterialSkin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class VistaMundos : MaterialForm
+    public partial class OpcionesDeAtacarPersonaje : MaterialForm
     {
-        public VistaMundos()
+        public OpcionesDeAtacarPersonaje()
         {
             InitializeComponent();
 
@@ -28,6 +28,8 @@ namespace GUI
                 Accent.LightBlue200,
                 TextShade.WHITE
             );
+
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

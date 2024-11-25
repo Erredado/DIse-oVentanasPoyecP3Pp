@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class VistaMundos : MaterialForm
+    public partial class HomeDprb : MaterialForm
     {
-        public VistaMundos()
+        public HomeDprb()
         {
             InitializeComponent();
 
@@ -28,6 +28,8 @@ namespace GUI
                 Accent.LightBlue200,
                 TextShade.WHITE
             );
+
+            
         }
     }
 }

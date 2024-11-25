@@ -50,6 +50,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpcionesDeAtacarPersonaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionesDeAtacarPersonaje.Designer.cs">
+      <DependentUpon>OpcionesDeAtacarPersonaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaRecuperarContra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaRecuperarContra.Designer.cs">
+      <DependentUpon>VistaRecuperarContra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpcionDeBuffer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpcionDeBuffer.Designer.cs">
+      <DependentUpon>OpcionDeBuffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionPrreyRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionPrreyRes.Designer.cs">
+      <DependentUpon>SeleccionPrreyRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="VistaAccionesPersonaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,28 +104,25 @@
     <Compile Include="VistaRegistrarPrgRp.Designer.cs">
       <DependentUpon>VistaRegistrarPrgRp.cs</DependentUpon>
     </Compile>
-    <Compile Include="VistaRegistrarUsuarios.cs">
+    <Compile Include="HomeDprb.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VistaRegistrarUsuarios.Designer.cs">
-      <DependentUpon>VistaRegistrarUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="HomeDprb.Designer.cs">
+      <DependentUpon>HomeDprb.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VistaUserPersonajes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VistaUserPersonajes.Designer.cs">
-      <DependentUpon>VistaUserPersonajes.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="OpcionesDeAtacarPersonaje.resx">
+      <DependentUpon>OpcionesDeAtacarPersonaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaRecuperarContra.resx">
+      <DependentUpon>VistaRecuperarContra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeDprb.resx">
+      <DependentUpon>HomeDprb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpcionDeBuffer.resx">
+      <DependentUpon>OpcionDeBuffer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +134,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeleccionPrreyRes.resx">
+      <DependentUpon>SeleccionPrreyRes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VistaAccionesPersonaje.resx">
       <DependentUpon>VistaAccionesPersonaje.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,12 +151,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRegistrarPrgRp.resx">
       <DependentUpon>VistaRegistrarPrgRp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VistaRegistrarUsuarios.resx">
-      <DependentUpon>VistaRegistrarUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VistaUserPersonajes.resx">
-      <DependentUpon>VistaUserPersonajes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.materialBtnCategoria = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnAgregar = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnVolver = new MaterialSkin.Controls.MaterialButton();
+            this.lblLoginTitle = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(698, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Consulta de Preguntas y Respuestas";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
@@ -81,7 +71,7 @@
             this.materialBtnAgregar.Depth = 0;
             this.materialBtnAgregar.HighEmphasis = true;
             this.materialBtnAgregar.Icon = null;
-            this.materialBtnAgregar.Location = new System.Drawing.Point(351, 536);
+            this.materialBtnAgregar.Location = new System.Drawing.Point(349, 536);
             this.materialBtnAgregar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialBtnAgregar.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialBtnAgregar.Name = "materialBtnAgregar";
@@ -115,16 +105,29 @@
             this.materialBtnVolver.UseVisualStyleBackColor = true;
             this.materialBtnVolver.Click += new System.EventHandler(this.materialBtnVolver_Click);
             // 
+            // lblLoginTitle
+            // 
+            this.lblLoginTitle.AutoSize = true;
+            this.lblLoginTitle.Depth = 0;
+            this.lblLoginTitle.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoginTitle.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblLoginTitle.Location = new System.Drawing.Point(182, 109);
+            this.lblLoginTitle.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblLoginTitle.Name = "lblLoginTitle";
+            this.lblLoginTitle.Size = new System.Drawing.Size(556, 41);
+            this.lblLoginTitle.TabIndex = 8;
+            this.lblLoginTitle.Text = "Consulta de Preguntas y Respuestas";
+            // 
             // VistaConsulPrgRp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 600);
+            this.Controls.Add(this.lblLoginTitle);
             this.Controls.Add(this.materialBtnVolver);
             this.Controls.Add(this.materialBtnAgregar);
             this.Controls.Add(this.materialBtnCategoria);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
             this.Name = "VistaConsulPrgRp";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -136,11 +139,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialButton materialBtnCategoria;
         private MaterialSkin.Controls.MaterialButton materialBtnAgregar;
         private MaterialSkin.Controls.MaterialButton materialBtnVolver;
+        private MaterialSkin.Controls.MaterialLabel lblLoginTitle;
     }
 }

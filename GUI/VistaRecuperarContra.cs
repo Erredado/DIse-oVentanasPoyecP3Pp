@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class VistaMundos : MaterialForm
+    public partial class VistaRecuperarContra : MaterialForm
     {
-        public VistaMundos()
+        public VistaRecuperarContra()
         {
             InitializeComponent();
 
@@ -28,6 +28,9 @@ namespace GUI
                 Accent.LightBlue200,
                 TextShade.WHITE
             );
+
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
+
     }
 }

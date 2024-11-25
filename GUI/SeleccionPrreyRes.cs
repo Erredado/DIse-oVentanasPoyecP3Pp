@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class VistaMundos : MaterialForm
+    public partial class SeleccionPrreyRes : MaterialForm
     {
-        public VistaMundos()
+        public SeleccionPrreyRes()
         {
             InitializeComponent();
 
@@ -28,6 +28,8 @@ namespace GUI
                 Accent.LightBlue200,
                 TextShade.WHITE
             );
+
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }
