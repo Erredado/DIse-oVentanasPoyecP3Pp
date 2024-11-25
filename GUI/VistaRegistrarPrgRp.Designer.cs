@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckbox();
-            this.label1 = new System.Windows.Forms.Label();
             this.materialTxtPrg = new MaterialSkin.Controls.MaterialTextBox();
             this.materialTxtRp = new MaterialSkin.Controls.MaterialTextBox();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialBtnRegistrar = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnCancelar = new MaterialSkin.Controls.MaterialButton();
+            this.lblLoginTitle = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,16 +53,6 @@
             this.materialCheckbox1.TabIndex = 0;
             this.materialCheckbox1.Text = "2";
             this.materialCheckbox1.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(698, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Registrar Preguntas y Respuestas";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // materialTxtPrg
             // 
@@ -129,10 +119,10 @@
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.lblLoginTitle);
             this.materialCard1.Controls.Add(this.materialComboBox1);
             this.materialCard1.Controls.Add(this.materialTxtRp);
             this.materialCard1.Controls.Add(this.materialTxtPrg);
-            this.materialCard1.Controls.Add(this.label1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard1.Location = new System.Drawing.Point(62, 98);
@@ -182,6 +172,19 @@
             this.materialBtnCancelar.UseVisualStyleBackColor = true;
             this.materialBtnCancelar.Click += new System.EventHandler(this.materialBtnCancelar_Click);
             // 
+            // lblLoginTitle
+            // 
+            this.lblLoginTitle.AutoSize = true;
+            this.lblLoginTitle.Depth = 0;
+            this.lblLoginTitle.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.lblLoginTitle.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.lblLoginTitle.Location = new System.Drawing.Point(124, 48);
+            this.lblLoginTitle.MouseState = MaterialSkin.MouseState.HOVER;
+            this.lblLoginTitle.Name = "lblLoginTitle";
+            this.lblLoginTitle.Size = new System.Drawing.Size(514, 41);
+            this.lblLoginTitle.TabIndex = 8;
+            this.lblLoginTitle.Text = "Registrar Preguntas y Respuestas";
+            // 
             // VistaRegistrarPrgRp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,6 +198,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro Preguntas y Respuestas";
             this.materialCard1.ResumeLayout(false);
+            this.materialCard1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,12 +206,12 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialCheckbox materialCheckbox1;
-        private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialTextBox materialTxtPrg;
         private MaterialSkin.Controls.MaterialTextBox materialTxtRp;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialButton materialBtnRegistrar;
         private MaterialSkin.Controls.MaterialButton materialBtnCancelar;
+        private MaterialSkin.Controls.MaterialLabel lblLoginTitle;
     }
 }

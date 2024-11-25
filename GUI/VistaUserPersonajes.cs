@@ -12,9 +12,10 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class VistaConsulPrgRp : MaterialForm
+    public partial class VistaUserPersonajes : MaterialForm
     {
-        public VistaConsulPrgRp()
+
+        public VistaUserPersonajes()
         {
             InitializeComponent();
 
@@ -30,18 +31,21 @@ namespace GUI
             );
         }
 
-        private void materialBtnVolver_Click(object sender, EventArgs e)
+        private void materialBtnSalir_Click(object sender, EventArgs e)
         {
             this.Hide();
             new HomeDprb().ShowDialog();
             this.Close();
         }
 
-        private void materialBtnAgregar_Click(object sender, EventArgs e)
+        private void materialBtnConfig_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new VistaRegistrarPrgRp().ShowDialog();
-            this.Close();
+            MessageBox.Show("FUNCIONES EN DASARROLLO");
+        }
+
+        private void VistaUserPersonajes_Load(object sender, EventArgs e)
+        {
+            tablapuntaje.ForeColor = Color.Black;
         }
     }
 }

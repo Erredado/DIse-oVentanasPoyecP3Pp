@@ -35,6 +35,7 @@
             this.PicturePersonaje = new System.Windows.Forms.PictureBox();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.txtdanio = new System.Windows.Forms.TextBox();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -60,16 +61,15 @@
             this.labelvida = new System.Windows.Forms.Label();
             this.labelperso = new System.Windows.Forms.Label();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialTxtOpEs = new MaterialSkin.Controls.MaterialTextBox();
             this.materialBtnRendirse = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnBuff = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnDefen = new MaterialSkin.Controls.MaterialButton();
             this.materialBtnAtacar = new MaterialSkin.Controls.MaterialButton();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
-            this.materialTxtOpEs = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
-            this.labelMensaje = new System.Windows.Forms.Label();
             this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
-            this.txtdanio = new System.Windows.Forms.TextBox();
+            this.labelMensaje = new System.Windows.Forms.Label();
+            this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
             this.PanelFondo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureNpc2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicturePersonaje2)).BeginInit();
@@ -165,6 +165,13 @@
             this.materialCard2.Size = new System.Drawing.Size(653, 174);
             this.materialCard2.TabIndex = 8;
             // 
+            // txtdanio
+            // 
+            this.txtdanio.Location = new System.Drawing.Point(541, 80);
+            this.txtdanio.Name = "txtdanio";
+            this.txtdanio.Size = new System.Drawing.Size(105, 20);
+            this.txtdanio.TabIndex = 19;
+            // 
             // materialButton2
             // 
             this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -180,8 +187,8 @@
             this.materialButton2.Size = new System.Drawing.Size(64, 36);
             this.materialButton2.TabIndex = 14;
             this.materialButton2.Text = "NPC";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton2.UseAccentColor = true;
             this.materialButton2.UseVisualStyleBackColor = true;
             // 
             // materialButton1
@@ -189,7 +196,6 @@
             this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton1.Depth = 0;
-            this.materialButton1.Enabled = false;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
             this.materialButton1.Location = new System.Drawing.Point(18, 33);
@@ -200,8 +206,8 @@
             this.materialButton1.Size = new System.Drawing.Size(104, 36);
             this.materialButton1.TabIndex = 13;
             this.materialButton1.Text = "Personaje";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton1.UseAccentColor = true;
             this.materialButton1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -438,6 +444,25 @@
             this.materialCard3.Size = new System.Drawing.Size(185, 329);
             this.materialCard3.TabIndex = 9;
             // 
+            // materialTxtOpEs
+            // 
+            this.materialTxtOpEs.AnimateReadOnly = false;
+            this.materialTxtOpEs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialTxtOpEs.Depth = 0;
+            this.materialTxtOpEs.Enabled = false;
+            this.materialTxtOpEs.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTxtOpEs.Hint = "OPCION ESCOGIDA";
+            this.materialTxtOpEs.LeadingIcon = null;
+            this.materialTxtOpEs.Location = new System.Drawing.Point(10, 17);
+            this.materialTxtOpEs.MaxLength = 50;
+            this.materialTxtOpEs.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTxtOpEs.Multiline = false;
+            this.materialTxtOpEs.Name = "materialTxtOpEs";
+            this.materialTxtOpEs.Size = new System.Drawing.Size(170, 50);
+            this.materialTxtOpEs.TabIndex = 18;
+            this.materialTxtOpEs.Text = "";
+            this.materialTxtOpEs.TrailingIcon = null;
+            // 
             // materialBtnRendirse
             // 
             this.materialBtnRendirse.AutoSize = false;
@@ -534,51 +559,6 @@
             this.materialCard4.Size = new System.Drawing.Size(184, 174);
             this.materialCard4.TabIndex = 10;
             // 
-            // materialTxtOpEs
-            // 
-            this.materialTxtOpEs.AnimateReadOnly = false;
-            this.materialTxtOpEs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTxtOpEs.Depth = 0;
-            this.materialTxtOpEs.Enabled = false;
-            this.materialTxtOpEs.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTxtOpEs.Hint = "OPCION ESCOGIDA";
-            this.materialTxtOpEs.LeadingIcon = null;
-            this.materialTxtOpEs.Location = new System.Drawing.Point(10, 17);
-            this.materialTxtOpEs.MaxLength = 50;
-            this.materialTxtOpEs.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTxtOpEs.Multiline = false;
-            this.materialTxtOpEs.Name = "materialTxtOpEs";
-            this.materialTxtOpEs.Size = new System.Drawing.Size(170, 50);
-            this.materialTxtOpEs.TabIndex = 18;
-            this.materialTxtOpEs.Text = "";
-            this.materialTxtOpEs.TrailingIcon = null;
-            // 
-            // materialButton7
-            // 
-            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton7.Depth = 0;
-            this.materialButton7.HighEmphasis = true;
-            this.materialButton7.Icon = null;
-            this.materialButton7.Location = new System.Drawing.Point(10, 10);
-            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton7.Name = "materialButton7";
-            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton7.Size = new System.Drawing.Size(88, 36);
-            this.materialButton7.TabIndex = 15;
-            this.materialButton7.Text = "MENSAJE";
-            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton7.UseAccentColor = false;
-            this.materialButton7.UseVisualStyleBackColor = true;
-            // 
-            // labelMensaje
-            // 
-            this.labelMensaje.Location = new System.Drawing.Point(17, 55);
-            this.labelMensaje.Name = "labelMensaje";
-            this.labelMensaje.Size = new System.Drawing.Size(150, 78);
-            this.labelMensaje.TabIndex = 16;
-            // 
             // materialButton8
             // 
             this.materialButton8.AutoSize = false;
@@ -599,12 +579,31 @@
             this.materialButton8.UseAccentColor = false;
             this.materialButton8.UseVisualStyleBackColor = true;
             // 
-            // txtdanio
+            // labelMensaje
             // 
-            this.txtdanio.Location = new System.Drawing.Point(541, 80);
-            this.txtdanio.Name = "txtdanio";
-            this.txtdanio.Size = new System.Drawing.Size(105, 20);
-            this.txtdanio.TabIndex = 19;
+            this.labelMensaje.Location = new System.Drawing.Point(17, 55);
+            this.labelMensaje.Name = "labelMensaje";
+            this.labelMensaje.Size = new System.Drawing.Size(150, 78);
+            this.labelMensaje.TabIndex = 16;
+            // 
+            // materialButton7
+            // 
+            this.materialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton7.Depth = 0;
+            this.materialButton7.HighEmphasis = true;
+            this.materialButton7.Icon = null;
+            this.materialButton7.Location = new System.Drawing.Point(10, 10);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton7.Name = "materialButton7";
+            this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton7.Size = new System.Drawing.Size(88, 36);
+            this.materialButton7.TabIndex = 15;
+            this.materialButton7.Text = "MENSAJE";
+            this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton7.UseAccentColor = false;
+            this.materialButton7.UseVisualStyleBackColor = true;
             // 
             // VistaAccionesPersonaje
             // 

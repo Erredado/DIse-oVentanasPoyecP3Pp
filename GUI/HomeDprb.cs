@@ -31,5 +31,26 @@ namespace GUI
 
             
         }
+
+        private void btnLoginSubmit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new VistaUserPersonajes().ShowDialog();
+            this.Close();
+        }
+
+        private void lnkForgotPassword_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new VistaRecuperarContra().ShowDialog();
+            this.Close();
+        }
+
+        private void btnRegisterSubmit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new VistaRegistrarUsuarios().ShowDialog();
+            this.Close();
+        }
     }
 }

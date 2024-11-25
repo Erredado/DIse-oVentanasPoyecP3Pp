@@ -30,9 +30,9 @@
             this.txtUsernameField = new MaterialSkin.Controls.MaterialTextBox2();
             this.lblLoginTitle = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPageLogin.SuspendLayout();
             this.materialCard2.SuspendLayout();
@@ -80,12 +80,12 @@
             this.materialCard2.Controls.Add(this.lblLoginTitle);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(442, 17);
+            this.materialCard2.Location = new System.Drawing.Point(442, 20);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(430, 469);
+            this.materialCard2.Size = new System.Drawing.Size(430, 464);
             this.materialCard2.TabIndex = 7;
             // 
             // lnkForgotPassword
@@ -99,6 +99,7 @@
             this.lnkForgotPassword.Size = new System.Drawing.Size(184, 19);
             this.lnkForgotPassword.TabIndex = 10;
             this.lnkForgotPassword.Text = "¿Olvidaste tu contraseña?";
+            this.lnkForgotPassword.Click += new System.EventHandler(this.lnkForgotPassword_Click);
             // 
             // materialDivider1
             // 
@@ -130,6 +131,7 @@
             this.btnRegisterSubmit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             this.btnRegisterSubmit.UseAccentColor = true;
             this.btnRegisterSubmit.UseVisualStyleBackColor = true;
+            this.btnRegisterSubmit.Click += new System.EventHandler(this.btnRegisterSubmit_Click);
             // 
             // btnLoginSubmit
             // 
@@ -150,6 +152,7 @@
             this.btnLoginSubmit.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnLoginSubmit.UseAccentColor = true;
             this.btnLoginSubmit.UseVisualStyleBackColor = true;
+            this.btnLoginSubmit.Click += new System.EventHandler(this.btnLoginSubmit_Click);
             // 
             // txtPasswordField
             // 
@@ -236,6 +239,17 @@
             this.materialCard1.Size = new System.Drawing.Size(406, 464);
             this.materialCard1.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::GUI.Properties.Resources.LogoHdAPp_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(378, 436);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPageSettings
             // 
             this.tabPageSettings.BackColor = System.Drawing.Color.White;
@@ -255,17 +269,6 @@
             this.imageList1.Images.SetKeyName(2, "icons8-settings-32.png");
             this.imageList1.Images.SetKeyName(3, "icons8-login-50.png");
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::GUI.Properties.Resources.LogoHdAPp_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(378, 436);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // HomeDprb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,9 +277,9 @@
             this.Controls.Add(this.materialTabControl1);
             this.DrawerTabControl = this.materialTabControl1;
             this.Name = "HomeDprb";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Heroes del Aprendizaje";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.materialTabControl1.ResumeLayout(false);
             this.tabPageLogin.ResumeLayout(false);
             this.materialCard2.ResumeLayout(false);

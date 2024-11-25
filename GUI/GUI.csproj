@@ -112,6 +112,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VistaRegistrarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaRegistrarUsuarios.Designer.cs">
+      <DependentUpon>VistaRegistrarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaUserPersonajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaUserPersonajes.Designer.cs">
+      <DependentUpon>VistaUserPersonajes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="OpcionesDeAtacarPersonaje.resx">
       <DependentUpon>OpcionesDeAtacarPersonaje.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRegistrarPrgRp.resx">
       <DependentUpon>VistaRegistrarPrgRp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaRegistrarUsuarios.resx">
+      <DependentUpon>VistaRegistrarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaUserPersonajes.resx">
+      <DependentUpon>VistaUserPersonajes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

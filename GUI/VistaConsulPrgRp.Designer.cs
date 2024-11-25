@@ -71,7 +71,7 @@
             this.materialBtnAgregar.Depth = 0;
             this.materialBtnAgregar.HighEmphasis = true;
             this.materialBtnAgregar.Icon = null;
-            this.materialBtnAgregar.Location = new System.Drawing.Point(349, 536);
+            this.materialBtnAgregar.Location = new System.Drawing.Point(344, 536);
             this.materialBtnAgregar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialBtnAgregar.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialBtnAgregar.Name = "materialBtnAgregar";
@@ -88,20 +88,20 @@
             // 
             this.materialBtnVolver.AutoSize = false;
             this.materialBtnVolver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialBtnVolver.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialBtnVolver.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
             this.materialBtnVolver.Depth = 0;
             this.materialBtnVolver.HighEmphasis = true;
             this.materialBtnVolver.Icon = null;
-            this.materialBtnVolver.Location = new System.Drawing.Point(589, 536);
+            this.materialBtnVolver.Location = new System.Drawing.Point(588, 536);
             this.materialBtnVolver.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialBtnVolver.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialBtnVolver.Name = "materialBtnVolver";
             this.materialBtnVolver.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialBtnVolver.Size = new System.Drawing.Size(206, 36);
+            this.materialBtnVolver.Size = new System.Drawing.Size(206, 32);
             this.materialBtnVolver.TabIndex = 3;
             this.materialBtnVolver.Text = "VOLVER";
-            this.materialBtnVolver.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialBtnVolver.UseAccentColor = false;
+            this.materialBtnVolver.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialBtnVolver.UseAccentColor = true;
             this.materialBtnVolver.UseVisualStyleBackColor = true;
             this.materialBtnVolver.Click += new System.EventHandler(this.materialBtnVolver_Click);
             // 
@@ -111,7 +111,7 @@
             this.lblLoginTitle.Depth = 0;
             this.lblLoginTitle.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.lblLoginTitle.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.lblLoginTitle.Location = new System.Drawing.Point(182, 109);
+            this.lblLoginTitle.Location = new System.Drawing.Point(170, 109);
             this.lblLoginTitle.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblLoginTitle.Name = "lblLoginTitle";
             this.lblLoginTitle.Size = new System.Drawing.Size(556, 41);

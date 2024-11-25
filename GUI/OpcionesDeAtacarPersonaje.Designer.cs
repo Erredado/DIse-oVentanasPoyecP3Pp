@@ -16,17 +16,17 @@
         private void InitializeComponent()
         {
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.label1 = new System.Windows.Forms.Label();
             this.labelcancelar = new System.Windows.Forms.Label();
             this.labelrecuperar = new System.Windows.Forms.Label();
             this.labelaumentar = new System.Windows.Forms.Label();
             this.lblCancelar = new MaterialSkin.Controls.MaterialLabel();
             this.lblRecuperar = new MaterialSkin.Controls.MaterialLabel();
+            this.BtnCancelar = new MaterialSkin.Controls.MaterialButton();
             this.lblAumentar = new MaterialSkin.Controls.MaterialLabel();
             this.btnHabilidad02 = new MaterialSkin.Controls.MaterialButton();
             this.btnBasico = new MaterialSkin.Controls.MaterialButton();
             this.btnHabilidad01 = new MaterialSkin.Controls.MaterialButton();
-            this.BtnCancelar = new MaterialSkin.Controls.MaterialButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.materialCard1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,16 @@
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard1.Size = new System.Drawing.Size(468, 403);
             this.materialCard1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(247, 279);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 61);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "-";
             // 
             // labelcancelar
             // 
@@ -105,6 +115,26 @@
             this.lblRecuperar.Name = "lblRecuperar";
             this.lblRecuperar.Size = new System.Drawing.Size(1, 0);
             this.lblRecuperar.TabIndex = 4;
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.AutoSize = false;
+            this.BtnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.BtnCancelar.Depth = 0;
+            this.BtnCancelar.HighEmphasis = true;
+            this.BtnCancelar.Icon = null;
+            this.BtnCancelar.Location = new System.Drawing.Point(14, 280);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.BtnCancelar.Size = new System.Drawing.Size(200, 60);
+            this.BtnCancelar.TabIndex = 2;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.BtnCancelar.UseAccentColor = false;
+            this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // lblAumentar
             // 
@@ -177,36 +207,6 @@
             this.btnHabilidad01.UseAccentColor = false;
             this.btnHabilidad01.UseVisualStyleBackColor = true;
             // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.AutoSize = false;
-            this.BtnCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.BtnCancelar.Depth = 0;
-            this.BtnCancelar.HighEmphasis = true;
-            this.BtnCancelar.Icon = null;
-            this.BtnCancelar.Location = new System.Drawing.Point(14, 280);
-            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.BtnCancelar.Size = new System.Drawing.Size(200, 60);
-            this.BtnCancelar.TabIndex = 2;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.BtnCancelar.UseAccentColor = false;
-            this.BtnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(247, 279);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 61);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "-";
-            // 
             // OpcionesDeAtacarPersonaje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +214,8 @@
             this.ClientSize = new System.Drawing.Size(500, 500);
             this.Controls.Add(this.materialCard1);
             this.Name = "OpcionesDeAtacarPersonaje";
+            this.Sizable = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Opciones de Ataque";
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
